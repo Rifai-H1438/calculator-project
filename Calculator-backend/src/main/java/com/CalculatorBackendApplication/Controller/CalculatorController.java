@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/calculator")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://YOUR-PROJECT.vercel.app"
+})
 public class CalculatorController {
 
     private final CalculatorService service;
