@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #0f172a,
+    #312e81,
+    #6d28d9,
+    #0e7490
+  );
+  background-size: 400% 400%;
+  animation: gradientBackground 12s ease infinite;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
